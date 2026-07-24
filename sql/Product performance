@@ -1,0 +1,54 @@
+select count(product_id) as total_products from product;
+
+select category,count(product_id) as total_products from product
+group by category
+order by total_products desc;
+
+select brand,count(product_id)as total_products from product
+group by brand 
+order by total_products desc;
+
+select round(avg(selling_price),2) as average_selling_price from product;
+
+select product_name,selling_price from product
+order by selling_price desc
+limit 1;
+
+select product_name,selling_price from product
+order by selling_price
+limit 1;
+
+select p.product_name,sum(o.quantity*o.unit_price)as total_revenue from product p
+join order_items o on p.product_id=o.product_id
+group by p.product_name
+order by total_revenue desc;
+
+select p.product_name,sum(o.quantity) as total_quantity_sold from product p
+join order_items o on p.product_id=o.product_id
+group by p.product_name
+order by total_quantity_sold desc;
+
+select p.product_name,round(avg(f.rating),2) as average_rating from product p
+join feedback f on p.product_id=f.product_id
+group by p.product_name
+order by average_rating desc;
+
+select p.product_name,round(avg(f.rating),2) as average_rating from product p
+join feedback f on p.product_id=f.product_id
+group by p.product_name
+order by average_rating asc;
+
+select p.product_name from product p left join order_items o on p.Product_id=o.product_id
+where o.product_id is null;
+
+select category,round(avg(selling_price),2) as average_price from product
+group by category
+order by average_price desc;
+
+select p.product_name,sum(o.quantity*o.unit_price)as total_revenue from product p
+join order_items o on p.Product_id=o.product_id
+group by p.product_name
+order by total_revenue desc
+limit 10;
+
+
