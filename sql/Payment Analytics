@@ -1,0 +1,51 @@
+select payment_method,sum(amount)as total_amount from payments
+group by payment_method
+order by total_amount desc;
+
+select payment_method,count(payment_id) as total_transactions from payments
+group by payment_method
+order by total_transactions desc;
+
+select payment_method,round(avg(amount),2) as average_payment from payments
+group by payment_method
+order by average_payment desc;
+
+select payment_method,sum(amount) as total_revenue from payments
+group by payment_method
+order by total_revenue desc
+limit 1;
+
+select max(amount)as highest_payment from payments;
+
+select min(amount)as highest_payment from payments;
+
+select year(payment_date) as payment_year,monthname(payment_date)as payment_month,sum(amount)as total_payment from payments
+group by year(payment_date),month(payment_date),monthname(payment_date)
+order by year(payment_date),month(payment_date);
+
+select year(payment_date) as payment_year,monthname(payment_date) as payment_month,sum(amount) as total_payment from payments
+group by year(payment_date),month(payment_date),monthname(payment_date)
+order by total_payment desc
+limit 1;
+
+select c.customer_name,sum(p.amount) as total_paid from customer c join payments p on c.customer_id=c.customer_id
+group by c.customer_name
+order by total_paid desc;
+
+select c.city,sum(p.amount) as total_payment from customer c join payments p on c.customer_id =c.customer_id
+group by c.city
+order by total_payment desc;
+
+select c.state,sum(p.amount) as total_payment from customer c join payments p on c.customer_id=c.customer_id
+group by c.state
+order by total_payment desc;
+
+select c.membership_type,sum(p.amount) as total_payment from customer c join payments p on c.customer_id=c.customer_id
+group by c.membership_type 
+order by total_payment desc;
+
+select payment_method,round(avg(amount),2) as average_transaction from payments
+group by payment_method
+having avg(amount)>(select avg(amount)from payments)
+order by average_transaction desc;
+
