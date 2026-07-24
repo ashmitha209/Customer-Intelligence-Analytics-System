@@ -23,7 +23,7 @@ The solution covers customer analysis, sales performance, product performance, o
 ## Technology Stack
 
 - MySQL
-- SQL
+- Excel
 - Python
 - MySQL Connector
 - Visual Studio Code
