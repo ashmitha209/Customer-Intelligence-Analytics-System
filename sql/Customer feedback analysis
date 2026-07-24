@@ -1,0 +1,32 @@
+select round(avg(rating),2)as average_rating from feedback;
+
+select p.product_name,round(avg(f.rating),2) as average_rating from product p join feedback f on p.product_id=f.product_id
+group by p.product_name
+order by average_rating desc;
+
+select p.product_name,round(avg(f.rating),2) as average_rating from product p join feedback f on p.product_id=f.product_id
+group by p.product_name
+order by average_rating asc;
+
+select p.category,round(avg(f.rating),2) as average_rating from product p join feedback f on p.product_id=f.product_id
+group by p.category
+order by average_rating desc;
+
+select count(feedback_id) as total_feedback from feedback;
+
+select p.product_name,count(product_name) as five_star_ratings from product p join feedback f on p.product_id=f.product_id
+where f.rating=5
+group by p.product_name
+order by five_star_ratings desc;
+
+select c.customer_name,avg(f.rating)as average_rating from customer c join feedback f on c.customer_id=f.customer_id
+group by c.customer_name
+order by  average_rating desc;
+
+select p.product_name from product p left join feedback f on p.product_id =f.product_id
+where f.product_id is null;
+
+select p.product_name,round(avg(f.rating),2) as average_rating from product p join feedback f on p.product_id=f.product_id
+group by p.product_name
+order by average_rating desc 
+limit 10;
