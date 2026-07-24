@@ -1,0 +1,81 @@
+order_id,customer_id,order_date,total_amount,payment_method,delivery_type,order_status
+O001,C035,2024-08-27,14878,UPI,Standard,Processing
+O002,C003,2024-12-11,9186,Credit Card,Express,Processing
+O003,C007,2024-05-05,17477,Credit Card,Standard,Shipped
+O004,C031,2024-08-12,18483,Credit Card,Standard,Delivered
+O005,C017,2025-01-03,14839,Debit Card,Standard,Shipped
+O006,C023,2024-07-17,18386,Credit Card,Standard,Shipped
+O007,C028,2025-02-11,18759,UPI,Standard,Delivered
+O008,C006,2025-05-15,16981,Cash,Express,Cancelled
+O009,C049,2024-04-20,4367,UPI,Standard,Shipped
+O010,C055,2024-10-25,9481,Cash,Express,Delivered
+O011,C004,2025-02-11,4019,Cash,Express,Cancelled
+O012,C021,2024-10-15,14522,Cash,Express,Processing
+O013,C022,2024-11-06,5720,Credit Card,Standard,Shipped
+O014,C009,2024-04-10,19977,Debit Card,Standard,Shipped
+O015,C003,2024-03-28,643,Credit Card,Express,Delivered
+O016,C007,2024-03-24,14678,Debit Card,Express,Shipped
+O017,C039,2025-01-03,5981,Debit Card,Express,Shipped
+O018,C035,2024-01-11,10509,Cash,Standard,Shipped
+O019,C035,2024-02-12,15160,UPI,Express,Cancelled
+O020,C016,2024-01-12,17141,Debit Card,Express,Shipped
+O021,C037,2024-05-19,8673,Debit Card,Standard,Shipped
+O022,C022,2024-08-28,14353,Cash,Standard,Cancelled
+O023,C030,2024-04-09,4958,Credit Card,Standard,Shipped
+O024,C037,2024-07-26,8045,Debit Card,Standard,Processing
+O025,C033,2024-05-14,11841,Cash,Standard,Delivered
+O026,C023,2024-05-04,19681,Cash,Express,Shipped
+O027,C022,2025-04-09,15007,Debit Card,Standard,Processing
+O028,C027,2025-05-15,4958,Debit Card,Standard,Cancelled
+O029,C021,2024-12-07,10377,UPI,Standard,Delivered
+O030,C026,2024-01-28,18319,Debit Card,Express,Cancelled
+O031,C054,2024-03-23,16820,Cash,Express,Cancelled
+O032,C044,2024-08-10,15816,Cash,Standard,Shipped
+O033,C018,2025-01-26,18149,Debit Card,Standard,Delivered
+O034,C046,2024-11-26,15405,UPI,Express,Shipped
+O035,C035,2024-05-25,10258,UPI,Express,Delivered
+O036,C006,2024-02-05,3445,UPI,Express,Delivered
+O037,C016,2025-01-06,9816,Debit Card,Standard,Cancelled
+O038,C026,2024-07-31,14551,UPI,Express,Delivered
+O039,C005,2025-01-02,3553,Debit Card,Express,Delivered
+O040,C025,2025-03-26,16089,Credit Card,Express,Processing
+O041,C051,2024-05-05,1832,UPI,Express,Shipped
+O042,C052,2024-04-25,6532,Credit Card,Express,Cancelled
+O043,C008,2025-01-12,3085,UPI,Standard,Processing
+O044,C018,2025-04-22,7767,Credit Card,Express,Delivered
+O045,C023,2024-02-02,1080,Cash,Express,Cancelled
+O046,C040,2025-02-27,15323,Cash,Express,Cancelled
+O047,C046,2024-08-17,15457,Cash,Standard,Shipped
+O048,C016,2024-12-10,17774,UPI,Standard,Delivered
+O049,C008,2024-09-04,10587,Debit Card,Standard,Processing
+O050,C013,2024-11-22,16164,Debit Card,Express,Shipped
+O051,C030,2025-02-27,1042,Credit Card,Standard,Delivered
+O052,C037,2025-01-22,4500,Debit Card,Express,Cancelled
+O053,C020,2024-06-02,19481,Debit Card,Standard,Cancelled
+O054,C050,2024-10-20,10365,Debit Card,Standard,Cancelled
+O055,C039,2024-12-11,4010,Credit Card,Express,Delivered
+O056,C038,2024-11-22,16637,Credit Card,Express,Processing
+O057,C013,2025-03-05,5245,Cash,Express,Processing
+O058,C007,2025-04-14,14162,Debit Card,Standard,Processing
+O059,C031,2024-06-29,13944,Cash,Standard,Processing
+O060,C001,2024-11-29,7086,Credit Card,Standard,Delivered
+O061,C012,2025-01-23,5822,Debit Card,Standard,Processing
+O062,C014,2025-02-03,9031,Debit Card,Standard,Processing
+O063,C018,2024-09-23,19762,Cash,Express,Shipped
+O064,C018,2024-11-27,18761,Debit Card,Express,Shipped
+O065,C012,2025-01-31,17188,Credit Card,Express,Cancelled
+O066,C002,2024-07-15,6552,UPI,Express,Shipped
+O067,C017,2024-03-25,7838,UPI,Express,Processing
+O068,C051,2024-03-29,14944,Debit Card,Express,Shipped
+O069,C019,2024-09-24,9638,UPI,Standard,Delivered
+O070,C029,2025-04-10,3508,Credit Card,Express,Processing
+O071,C052,2024-09-02,9778,Credit Card,Express,Processing
+O072,C039,2025-05-03,2069,Debit Card,Express,Shipped
+O073,C039,2024-12-06,12520,Cash,Standard,Shipped
+O074,C033,2024-02-17,1050,Debit Card,Express,Processing
+O075,C048,2024-01-18,13777,Debit Card,Standard,Shipped
+O076,C031,2024-07-12,7246,Credit Card,Express,Delivered
+O077,C049,2024-01-09,17066,UPI,Standard,Processing
+O078,C022,2025-02-23,4085,Debit Card,Standard,Delivered
+O079,C050,2024-10-01,8894,UPI,Standard,Delivered
+O080,C052,2024-04-30,13317,Cash,Express,Shipped
